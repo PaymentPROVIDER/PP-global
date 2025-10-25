@@ -1,12 +1,9 @@
-export const metadata = {
-  title: "PaymentProviderGlobal.com",
-  description: "Globalne rozwiązania płatnicze dla Twojego biznesu",
-};
+import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
-      <body className="min-h-screen bg-[#f4f6f8] text-slate-900">{children}</body>
+      <body className="bg-slate-100 text-slate-900">{children}</body>
     </html>
   );
 }
