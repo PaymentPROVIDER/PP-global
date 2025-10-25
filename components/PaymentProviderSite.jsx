@@ -148,13 +148,13 @@ export default function PaymentProviderSite() {
             i zostaw unoptimized (działa, bo w next.config jest images.unoptimized=true) */}
             {/*
             <Image
-              src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1600&auto=format&fit=crop"
-              alt="Hero"
-              width={1600}
-              height={1000}
-              className="w-full rounded-3xl shadow-2xl object-cover bg-white"
-              unoptimized
-              priority
+  src={`${BASE}/hero.svg`}
+  alt="Hero"
+  width={1600}
+  height={1000}
+  className="w-full rounded-3xl shadow-2xl object-cover bg-white"
+  unoptimized
+  priority
             />
             */}
           </motion.div>
