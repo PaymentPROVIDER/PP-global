@@ -70,8 +70,15 @@ export default function PaymentProviderSite() {
             </div>
           </div>
           <motion.div initial={{opacity:0, scale:0.98}} animate={{opacity:1, scale:1}} transition={{duration:0.6}} className="relative">
-            <img src="https://images.unsplash.com/photo-1556742048-3c52d6e88c62?q=80&w=1600&auto=format&fit=crop" alt="Hero" className="w-full rounded-3xl shadow-2xl"/>
-          </motion.div>
+           <Image src="https://images.unsplash.com/photo-1556742048-3c52d6e88c62?q=80&w=1600&auto=format&fit=crop"
+  alt="Hero"
+  width={1600}
+  height={1000}
+  className="w-full rounded-3xl shadow-2xl"
+  unoptimized
+  priority
+/>
+ 
         </div>
       </section>
 
@@ -86,7 +93,7 @@ export default function PaymentProviderSite() {
             {products.map((p)=> (
               <div key={p.id} className="group rounded-2xl border bg-white overflow-hidden hover:shadow-lg transition-all">
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform"/>
+                  <image src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform"/>
                   <div className="absolute left-3 top-3 text-[11px] bg-white/90 border px-2 py-0.5 rounded-full">{p.badge}</div>
                 </div>
                 <div className="p-4">
@@ -146,7 +153,7 @@ export default function PaymentProviderSite() {
     {/* Logo i opis */}
     <div>
       <div className="flex items-center space-x-2 mb-4">
-        <img src={`${BASE}/logo-pp.svg`} alt="PaymentProvider logo" className="w-8 h-8" />
+        <imgage src={`${BASE}/logo-pp.svg`} alt="PaymentProvider logo" className="w-8 h-8" />
         <span className="font-semibold text-lg text-slate-900">PaymentProvider</span>
       </div>
       <p className="text-sm text-slate-600">
