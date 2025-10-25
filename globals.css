@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Globalne tło strony */
+/* Szare tło globalnie */
 html, body {
-  background: #f4f6f8;   /* jasny szary */
   height: 100%;
+  background-color: #f4f6f8;
 }
