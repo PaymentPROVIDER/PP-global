@@ -39,7 +39,8 @@ export default function PaymentProviderSite() {
       </header>
 
       {/* Hero */}
-     <section className="py-14">
+     {/* HERO */}
+<section className="py-14">
   <div className="max-w-7xl mx-auto px-6">
     <motion.div
       initial={{ opacity: 0, scale: 0.98 }}
@@ -55,6 +56,10 @@ export default function PaymentProviderSite() {
         className="w-full rounded-3xl shadow-2xl object-cover"
         priority
       />
+    </motion.div>
+  </div>
+</section>
+
     </motion.div>
   </div>
 </section>
