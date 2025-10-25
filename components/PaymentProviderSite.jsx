@@ -79,7 +79,7 @@ export default function PaymentProviderSite() {
   priority
 />
  
-</motion.div>      </section>
+</motion.div>    </div>   </section>
 
       {/* Sklep (lista produktów) */}
       <section className="py-14" id="sklep">
