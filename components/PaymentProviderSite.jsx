@@ -5,9 +5,9 @@ import { ShoppingCart, CreditCard, Smartphone, ShieldCheck, Truck, ArrowRight } 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export default function PaymentProviderSite() {
   const products = [
-    { id: 1, name: "Produkt A", price: "658,00 zł", badge: "Bestseller", img: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1600&auto=format&fit=crop" },
-    { id: 2, name: "Produkt B", price: "1 849,00 zł", badge: "Nowość", img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop" },
-    { id: 3, name: "Produkt C", price: "0,00 zł", badge: "Promocja", img: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1600&auto=format&fit=crop" },
+    { id: 1, name: "Produkt A", price: "658,00 zł", badge: "Bestseller", Image: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1600&auto=format&fit=crop" },
+    { id: 2, name: "Produkt B", price: "1 849,00 zł", badge: "Nowość", Image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop" },
+    { id: 3, name: "Produkt C", price: "0,00 zł", badge: "Promocja", Image: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1600&auto=format&fit=crop" },
   ];
 
   const payments = ["Visa", "Mastercard", "American Express", "BLIK", "Apple Pay", "Google Pay"];
