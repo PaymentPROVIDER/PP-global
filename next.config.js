@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'export', // to zastępuje dawny `next export`
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
-  reactStrictMode: true
-}
+  basePath: '/PP-global', // 👈 bardzo ważne! nazwa repozytorium (taka jak w URL GitHuba)
+};
 
 export default nextConfig;
