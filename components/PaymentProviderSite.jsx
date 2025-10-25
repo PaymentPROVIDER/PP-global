@@ -22,7 +22,7 @@ export default function PaymentProviderSite() {
       <header className="sticky top-0 z-30 bg-white/80 backdrop-blur border-b">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/logo-pp.svg" alt="PaymentProvider logo" className="w-9 h-9" />
+           <img src={`${BASE}/logo-pp.svg`} alt="PaymentProvider logo" className="w-9 h-9" />
             <span className="font-semibold text-lg">PaymentProvider</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
