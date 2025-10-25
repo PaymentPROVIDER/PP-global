@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: { appDir: true },
-  images: {
-    remotePatterns: [
-      { protocol: 'https', hostname: 'images.unsplash.com' },
-      { protocol: 'https', hostname: 'files.oaiusercontent.com' }
-    ]
-  }
+  output: 'export',
+  images: { unoptimized: true },
+  basePath: '/PP-global',
+  assetPrefix: '/PP-global/',
+  trailingSlash: true,
 };
+
 module.exports = nextConfig;
+}
