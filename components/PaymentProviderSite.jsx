@@ -21,7 +21,7 @@ export default function PaymentProviderSite() {
       <header className="sticky top-0 z-30 bg-white/80 backdrop-blur border-b">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-           <img src={`${BASE}/logo-pp.svg`} alt="PaymentProvider logo" className="w-9 h-9" />
+           <Image src={`${BASE}/logo-pp.svg`} alt="PaymentProvider logo" className="w-9 h-9" />
             <span className="font-semibold text-lg">PaymentProvider</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -141,7 +141,7 @@ export default function PaymentProviderSite() {
       <footer className="border-t">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-600 grid md:grid-cols-2 gap-4">
           <div className="flex items-center gap-2">
-            <img src="/logo-pp.svg" alt="PaymentProvider logo" className="w-6 h-6" />
+            <Image src="/logo-pp.svg" alt="PaymentProvider logo" className="w-6 h-6" />
             <span>© {new Date().getFullYear()} PaymentProviderGlobal.com</span>
             <span className="block text-xs text-slate-500">Payment Provider Sp. z o.o. • ul. Opolska 15, 40-084 Katowice • office@paymentproviderglobal.com</span>
           </div>
