@@ -139,21 +139,56 @@ export default function PaymentProviderSite() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-slate-600 grid md:grid-cols-2 gap-4">
-          <div className="flex items-center gap-2">
-            <Image src="/logo-pp.svg" alt="PaymentProvider logo" className="w-6 h-6" />
-            <span>© {new Date().getFullYear()} PaymentProviderGlobal.com</span>
-            <span className="block text-xs text-slate-500">Payment Provider Sp. z o.o. • ul. Opolska 15, 40-084 Katowice • office@paymentproviderglobal.com</span>
-          </div>
-          <div className="md:text-right flex md:justify-end gap-4">
-            <a href="#" className="hover:opacity-70">Polityka prywatności</a>
-            <a href="#" className="hover:opacity-70">Regulamin</a>
-            <a href="#kontakt" className="hover:opacity-70">Kontakt</a>
-          </div>
-        </div>
-      </footer>
+    {/* FOOTER */}
+<footer className="bg-slate-50 border-t mt-16">
+  <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-slate-700">
+    
+    {/* Logo i opis */}
+    <div>
+      <div className="flex items-center space-x-2 mb-4">
+        <img src={`${BASE}/logo-pp.svg`} alt="PaymentProvider logo" className="w-8 h-8" />
+        <span className="font-semibold text-lg text-slate-900">PaymentProvider</span>
+      </div>
+      <p className="text-sm text-slate-600">
+        Nowoczesne rozwiązania płatnicze online i SoftPOS dla Twojego biznesu. 
+        Szybko, bezpiecznie, globalnie.
+      </p>
     </div>
-  );
-}
+
+    {/* O nas */}
+    <div>
+      <h3 className="font-semibold text-slate-900 mb-3">Firma</h3>
+      <ul className="space-y-2 text-sm">
+        <li><a href="#" className="hover:text-blue-600">O nas</a></li>
+        <li><a href="#" className="hover:text-blue-600">Kariera</a></li>
+        <li><a href="#" className="hover:text-blue-600">Kontakt</a></li>
+      </ul>
+    </div>
+
+    {/* Oferta */}
+    <div>
+      <h3 className="font-semibold text-slate-900 mb-3">Oferta</h3>
+      <ul className="space-y-2 text-sm">
+        <li><a href="#" className="hover:text-blue-600">Płatności online</a></li>
+        <li><a href="#" className="hover:text-blue-600">SoftPOS</a></li>
+        <li><a href="#" className="hover:text-blue-600">Integracje API</a></li>
+      </ul>
+    </div>
+
+    {/* Polityka */}
+    <div>
+      <h3 className="font-semibold text-slate-900 mb-3">Informacje</h3>
+      <ul className="space-y-2 text-sm">
+        <li><a href="#" className="hover:text-blue-600">Polityka prywatności</a></li>
+        <li><a href="#" className="hover:text-blue-600">Regulamin</a></li>
+        <li><a href="#" className="hover:text-blue-600">RODO</a></li>
+      </ul>
+    </div>
+  </div>
+
+  {/* Dolna linia */}
+  <div className="border-t py-4 text-center text-sm text-slate-500">
+    © {new Date().getFullYear()} PaymentProvider. Wszelkie prawa zastrzeżone.
+  </div>
+</footer>
+
