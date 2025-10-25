@@ -191,4 +191,7 @@ export default function PaymentProviderSite() {
     © {new Date().getFullYear()} PaymentProvider. Wszelkie prawa zastrzeżone.
   </div>
 </footer>
+    </div> 
+  );
+}
 
