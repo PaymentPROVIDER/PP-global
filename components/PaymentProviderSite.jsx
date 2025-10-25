@@ -39,8 +39,26 @@ export default function PaymentProviderSite() {
       </header>
 
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
+     <section className="py-14">
+  <div className="max-w-7xl mx-auto px-6">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.98 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6 }}
+      className="relative"
+    >
+      <Image
+        src="/hero.jpg"
+        alt="Hero"
+        width={1600}
+        height={1000}
+        className="w-full rounded-3xl shadow-2xl object-cover"
+        priority
+      />
+    </motion.div>
+  </div>
+</section>
+
           <div>
             <motion.h1 initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} transition={{duration:0.5}} className="text-4xl md:text-5xl font-bold leading-tight">
               Globalne rozwiązania płatnicze <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">dla Twojego biznesu</span>
