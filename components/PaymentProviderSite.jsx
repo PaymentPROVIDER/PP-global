@@ -38,8 +38,7 @@ export default function PaymentProviderSite() {
         </div>
       </header>
 
-      {/* Hero */}
-     {/* HERO */}
+{/* HERO */}
 <section className="py-14">
   <div className="max-w-7xl mx-auto px-6">
     <motion.div
@@ -60,9 +59,6 @@ export default function PaymentProviderSite() {
   </div>
 </section>
 
-    </motion.div>
-  </div>
-</section>
 
           <div>
             <motion.h1 initial={{opacity:0, y:10}} animate={{opacity:1, y:0}} transition={{duration:0.5}} className="text-4xl md:text-5xl font-bold leading-tight">
