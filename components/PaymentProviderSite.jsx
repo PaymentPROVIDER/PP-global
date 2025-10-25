@@ -9,6 +9,11 @@ import { ShoppingCart, CreditCard, Smartphone, ShieldCheck, Truck, ArrowRight } 
  * GitHub Pages działa pod /PP-global, więc podajemy bazę na sztywno.
  * Dzięki temu logo i hero z /public będą zawsze widoczne.
  */
+// GH Pages ma basePath "/PP-global". Lokalnie (npm run dev) ma być pusto.
+const BASE =
+  process.env.NEXT_PUBLIC_BASE_PATH ??
+  (process.env.NODE_ENV === "production" ? "/PP-global" : "");
+
 const BASE = "/PP-global";
 
 export default function PaymentProviderSite() {
