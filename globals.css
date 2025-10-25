@@ -1,9 +1,9 @@
-body {
-  background-color: #f4f6f8; /* np. jasny szary */
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-html, body { height: 100%; }
+/* Globalne tło strony */
+html, body {
+  background: #f4f6f8;   /* jasny szary */
+  height: 100%;
+}
