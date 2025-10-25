@@ -1,5 +1,7 @@
 "use client";
+
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ShoppingCart, CreditCard, Smartphone, ShieldCheck, Truck, ArrowRight } from "lucide-react";
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
