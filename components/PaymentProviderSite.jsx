@@ -1,3 +1,4 @@
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
