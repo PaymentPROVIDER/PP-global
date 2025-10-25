@@ -1,3 +1,6 @@
+"use client";
+
+import React from "react";
 import Image from "next/image";
-import PaymentProviderSite from "../components/PaymentProviderSite";
-export default function Home() { return <PaymentProviderSite />; }
+import { motion } from "framer-motion";
+import { ShoppingCart, CreditCard, Smartphone, ShieldCheck, Truck, ArrowRight } from "lucide-react";
