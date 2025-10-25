@@ -1,9 +1,8 @@
-const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { ShoppingCart, CreditCard, Smartphone, ShieldCheck, Truck, ArrowRight } from "lucide-react";
-
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export default function PaymentProviderSite() {
   const products = [
     { id: 1, name: "Produkt A", price: "658,00 zł", badge: "Bestseller", img: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1600&auto=format&fit=crop" },
