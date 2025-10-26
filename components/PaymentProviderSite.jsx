@@ -76,12 +76,12 @@ const products = [
   return (
     <div className="min-h-screen bg-slate-100 text-slate-900">
       {/* Pasek info */}
-      <div className="w-full text-center text-xs py-2 border-b bg-white/80">
+      <div className="w-full text-center text-xs py-2 border-b bg-blue-600">
         Darmowa dostawa od 199 zł • 30 dni na zwrot
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-30 bg-white/80 backdrop-blur border-b">
+      <header className="sticky top-0 z-30 bg-blue-600 backdrop-blur border-b">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
@@ -110,7 +110,7 @@ const products = [
             </a>
           </nav>
 
-          <button className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm bg-white hover:shadow-md">
+          <button className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm bg-blue-600 hover:shadow-md">
             <ShoppingCart className="w-4 h-4" /> Koszyk (0)
           </button>
         </div>
@@ -141,7 +141,7 @@ const products = [
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <a
                 href="#sklep"
-                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 border bg-white text-sm font-medium hover:shadow-md"
+                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 border bg-blue-600 text-sm font-medium hover:shadow-md"
               >
                 <ArrowRight className="w-4 h-4 mr-2" />
                 Zobacz ofertę
@@ -156,7 +156,7 @@ const products = [
 
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
               {features.map((f, i) => (
-                <div key={i} className="rounded-2xl border p-4 bg-white">
+                <div key={i} className="rounded-2xl border p-4 bg-blue-600">
                   <div className="flex items-center gap-2 font-medium">
                     {f.icon}
                     {f.title}
@@ -179,7 +179,7 @@ const products = [
               alt="Hero"
               width={1600}
               height={1000}
-              className="w-full rounded-3xl shadow-2xl object-cover bg-white"
+              className="w-full rounded-3xl shadow-2xl object-cover bg-blue-600"
               priority
             />
           </motion.div>
@@ -200,7 +200,7 @@ const products = [
             {products.map((p) => (
               <div
                 key={p.id}
-                className="group rounded-2xl border bg-white overflow-hidden hover:shadow-lg transition-all"
+                className="group rounded-2xl border bg-blue-600 overflow-hidden hover:shadow-lg transition-all"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
@@ -244,7 +244,7 @@ const products = [
             {payments.map((name, i) => (
               <div
                 key={i}
-                className="rounded-xl border bg-white py-3 text-center text-sm"
+                className="rounded-xl border bg-blue-600 py-3 text-center text-sm"
               >
                 {name}
               </div>
@@ -256,7 +256,7 @@ const products = [
       {/* KONTAKT */}
       <section className="py-14" id="kontakt">
         <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-8">
-          <div className="rounded-2xl border p-6 bg-white">
+          <div className="rounded-2xl border p-6 bg-blue-600">
             <h3 className="text-2xl font-semibold">Kontakt</h3>
             <form
               className="mt-6 grid grid-cols-1 gap-4"
@@ -280,7 +280,7 @@ const products = [
             </form>
           </div>
 
-          <div className="rounded-2xl border p-6 bg-white">
+          <div className="rounded-2xl border p-6 bg-blue-600">
             <div className="font-medium">Dane firmy</div>
             <div className="mt-2 text-sm text-slate-700">
               Payment Provider Sp. z o.o.
@@ -305,7 +305,7 @@ const products = [
       </section>
 
       {/* STOPKA */}
-      <footer className="bg-white border-t mt-16">
+      <footer className="bg-blue-600 border-t mt-16">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-slate-700">
           {/* Logo i opis */}
           <div>
@@ -396,7 +396,7 @@ const products = [
           </div>
         </div>
 
-        <div className="border-t py-4 text-center text-sm text-slate-500 bg-white">
+        <div className="border-t py-4 text-center text-sm text-slate-500 bg-blue-600">
           © {new Date().getFullYear()} PaymentProvider. Wszelkie prawa zastrzeżone.
         </div>
       </footer>
