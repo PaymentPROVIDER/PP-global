@@ -24,23 +24,23 @@ export default function PaymentProviderSite() {
   const products = [
     {
       id: 1,
-      name: "Produkt A",
-      price: "658,00 zł",
+      name: "Ingenico DX 8000",
+      price: "499,00 zł",
       badge: "Bestseller",
       img: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1600&auto=format&fit=crop",
     },
     {
       id: 2,
-      name: "Produkt B",
-      price: "1 849,00 zł",
-      badge: "Nowość",
+      name: "EyePOS by EYEID  Nowość!",
+      price: " 499,00 zł",
+      badge: "Inowacja",
       img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop",
     },
     {
       id: 3,
-      name: "Produkt C",
-      price: "0,00 zł",
-      badge: "Promocja",
+      name: "Aplikacja Softpos na telefon",
+      price: "4,99 zł",
+      badge: "Nowość",
       img: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1600&auto=format&fit=crop",
     },
   ];
@@ -322,7 +322,8 @@ export default function PaymentProviderSite() {
               </span>
             </div>
             <p className="text-sm text-slate-600">
-              Nowoczesne rozwiązania płatnicze online i SoftPOS dla Twojego
+              Nowoczesne rozwiązania, płatności online e-commerce , terminale POS
+               i SoftPOS dla Twojego
               biznesu. Szybko, bezpiecznie, globalnie.
             </p>
           </div>
