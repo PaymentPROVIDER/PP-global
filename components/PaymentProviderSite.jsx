@@ -74,7 +74,7 @@ const products = [
   ];
 
   return (
-    <div className="min-h-screen bg-slate-100 text-slate-900">
+    <div className="min-h-screen bg-slate-400 text-slate-900">
       {/* Pasek info */}
       <div className="w-full text-center text-xs py-2 border-b bg-blue-600">
         Darmowa dostawa od 199 zł • 30 dni na zwrot
@@ -211,18 +211,18 @@ const products = [
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                     unoptimized
                   />
-                  <div className="absolute left-3 top-3 text-[11px] bg-white/90 border px-2 py-0.5 rounded-full">
+                  <div className="absolute left-3 top-3 text-[11px] bg-slate-700	szary z mocniejszym kontrastem	#94a3b8 border px-2 py-0.5 rounded-full">
                     {p.badge}
                   </div>
                 </div>
                 <div className="p-4">
                   <div className="font-medium">{p.name}</div>
-                  <div className="text-slate-600 text-sm mt-0.5">
+                  <div className="text-slate-700 text-sm mt-0.5">
                     Krótki opis produktu — zalety i zastosowanie.
                   </div>
                   <div className="mt-3 flex items-center justify-between">
                     <div className="font-semibold">{p.price}</div>
-                    <button className="inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-50">
+                    <button className="inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-200">
                       <ShoppingCart className="w-4 h-4" /> Dodaj
                     </button>
                   </div>
@@ -396,7 +396,7 @@ const products = [
           </div>
         </div>
 
-        <div className="border-t py-4 text-center text-sm text-slate-500 bg-blue-600">
+        <div className="border-t py-4 text-center text-sm text-slate-900 bg-blue-600">
           © {new Date().getFullYear()} PaymentProvider. Wszelkie prawa zastrzeżone.
         </div>
       </footer>
