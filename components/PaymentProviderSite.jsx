@@ -210,7 +210,7 @@ export default function PaymentProviderSite() {
   <button className="inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-200">
     Dodaj
   </button>
-
+</div>
 
                   </div>
                 </div>
