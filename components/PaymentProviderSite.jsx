@@ -128,7 +128,7 @@ const products = [
               className="text-4xl md:text-5xl font-bold leading-tight"
             >
               Globalne rozwiązania płatnicze{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-bg-slate-400 to-purple-600">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 to-slate-800">
                 dla Twojego biznesu
               </span>
             </motion.h1>
