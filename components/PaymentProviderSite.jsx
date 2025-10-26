@@ -110,7 +110,7 @@ export default function PaymentProviderSite() {
               className="text-4xl md:text-5xl font-bold leading-tight"
             >
               Globalne rozwiązania płatnicze{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-600 to-slate-800">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-700 to-slate-800">
                 dla Twojego biznesu
               </span>
             </motion.h1>
@@ -123,7 +123,7 @@ export default function PaymentProviderSite() {
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <a
                 href="#sklep"
-                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 border bg-slate-400 text-sm font-medium hover:shadow-md"
+                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 border bg-slate-500 text-sm font-medium hover:shadow-md"
               >
                 <ArrowRight className="w-4 h-4 mr-2" />
                 Zobacz ofertę
