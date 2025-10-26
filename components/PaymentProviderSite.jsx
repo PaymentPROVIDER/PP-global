@@ -305,7 +305,7 @@ const products = [
       </section>
 
       {/* STOPKA */}
-      <footer className="bg-blue-600 border-t mt-16">
+      <footer className="bg-slate-400 border-t mt-16">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-slate-700">
           {/* Logo i opis */}
           <div>
@@ -334,17 +334,17 @@ const products = [
             <h3 className="font-semibold text-slate-900 mb-3">Firma</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#o-nas" className="hover:text-blue-600">
+                <a href="#o-nas" className="hover:text-bg-slate-400">
                   O nas
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600">
+                <a href="#" className="hover:text-bg-slate-400">
                   Kariera
                 </a>
               </li>
               <li>
-                <a href="#kontakt" className="hover:text-blue-600">
+                <a href="#kontakt" className="hover:text-bg-slate-400">
                   Kontakt
                 </a>
               </li>
@@ -356,17 +356,17 @@ const products = [
             <h3 className="font-semibold text-slate-900 mb-3">Oferta</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#oferta" className="hover:text-blue-600">
+                <a href="#oferta" className="hover:text-bg-slate-400">
                   Płatności online
                 </a>
               </li>
               <li>
-                <a href="#oferta" className="hover:text-blue-600">
+                <a href="#oferta" className="hover:text-bg-slate-400">
                   SoftPOS
                 </a>
               </li>
               <li>
-                <a href="#oferta" className="hover:text-blue-600">
+                <a href="#oferta" className="hover:text-0"bg-slate-400>">
                   Integracje API
                 </a>
               </li>
@@ -378,17 +378,17 @@ const products = [
             <h3 className="font-semibold text-slate-900 mb-3">Informacje</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-blue-600">
+                <a href="#" className="hover:text-bg-slate-400">
                   Polityka prywatności
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600">
+                <a href="#" className="hover:text-bg-slate-400">
                   Regulamin
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600">
+                <a href="#" className="hover:text-bg-slate-400">
                   RODO
                 </a>
               </li>
@@ -396,7 +396,7 @@ const products = [
           </div>
         </div>
 
-        <div className="border-t py-4 text-center text-sm text-slate-900 bg-blue-600">
+        <div className="border-t py-4 text-center text-sm text-slate-900 bg-slate-400">
           © {new Date().getFullYear()} PaymentProvider. Wszelkie prawa zastrzeżone.
         </div>
       </footer>
