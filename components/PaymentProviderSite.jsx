@@ -117,14 +117,14 @@ export default function PaymentProviderSite() {
               className="text-4xl md:text-5xl font-bold leading-tight"
             >
               Globalne rozwiązania płatnicze{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 to-slate-800">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-600 to-slate-800">
                 dla Twojego biznesu
               </span>
             </motion.h1>
 
             <p className="mt-4 text-slate-600 max-w-xl">
-              PaymentProviderGlobal.com — nowoczesny dostawca płatności online i
-              terminali SoftPOS dla firm każdej wielkości.
+              PaymentProviderGlobal.com — nowoczesny dostawca, płatności na terminalach POS , płatności e-commerce i
+              terminali SoftPOS, dla firm każdej wielkości.
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
