@@ -44,7 +44,7 @@ export default function PaymentProviderSite() {
     badge: "Nowość",
     img: `${BASE}/products/softpos-app.jpg`,
   },
-
+];
       img: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1600&auto=format&fit=crop",
     },
   ];
