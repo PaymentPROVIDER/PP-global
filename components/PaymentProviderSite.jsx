@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import {
   ShoppingCart,
   CreditCard,
-  Smartphone,
   ShieldCheck,
   Truck,
   ArrowRight,
@@ -21,30 +20,29 @@ const BASE =
   (process.env.NODE_ENV === "production" ? "/PP-global" : "");
 
 export default function PaymentProviderSite() {
-const products = [
-  {
-    id: 1,
-    name: "Terminal Ingenico",
-    price: "499,00 zł",
-    badge: "Bestseller",
-    img: `${BASE}/products/terminal-ingenico.jpg`,
-  },
-  {
-    id: 2,
-    name: "Terminal EyePOS by EYEID",
-    price: "499,00 zł",
-    badge: "Innowacja",
-    img: `${BASE}/products/terminal-eyeid.jpg`,
-  },
-  {
-    id: 3,
-    name: "Aplikacja SoftPOS na telefon",
-    price: "4,99 zł",
-    badge: "Nowość",
-    img: `${BASE}/products/softpos-app.jpg`,
-  },
-];
-
+  const products = [
+    {
+      id: 1,
+      name: "Terminal Ingenico",
+      price: "499,00 zł",
+      badge: "Bestseller",
+      img: `${BASE}/products/terminal-ingenico.jpg`,
+    },
+    {
+      id: 2,
+      name: "Terminal EyePOS by EYEID",
+      price: "499,00 zł",
+      badge: "Innowacja",
+      img: `${BASE}/products/terminal-eyeid.jpg`,
+    },
+    {
+      id: 3,
+      name: "Aplikacja SoftPOS na telefon",
+      price: "4,99 zł",
+      badge: "Nowość",
+      img: `${BASE}/products/softpos-app.jpg`,
+    },
+  ];
 
   const features = [
     {
@@ -96,18 +94,10 @@ const products = [
           </div>
 
           <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a href="#o-nas" className="hover:opacity-70">
-              O nas
-            </a>
-            <a href="#oferta" className="hover:opacity-70">
-              Oferta
-            </a>
-            <a href="#sklep" className="hover:opacity-70">
-              Sklep
-            </a>
-            <a href="#kontakt" className="hover:opacity-70">
-              Kontakt
-            </a>
+            <a href="#o-nas">O nas</a>
+            <a href="#oferta">Oferta</a>
+            <a href="#sklep">Sklep</a>
+            <a href="#kontakt">Kontakt</a>
           </nav>
 
           <button className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm bg-slate-400 hover:shadow-md">
@@ -119,7 +109,6 @@ const products = [
       {/* HERO */}
       <section className="py-14">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
-          {/* Lewy blok: headline + CTA + features */}
           <div>
             <motion.h1
               initial={{ opacity: 0, y: 10 }}
@@ -167,7 +156,6 @@ const products = [
             </div>
           </div>
 
-          {/* Prawy blok: obraz hero (z /public/hero.svg) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -175,7 +163,7 @@ const products = [
             className="relative"
           >
             <Image
-              src={`${BASE}/hero.svg`} // <-- Twój plik w /public
+              src={`${BASE}/hero.svg`}
               alt="Hero"
               width={1600}
               height={1000}
@@ -191,7 +179,10 @@ const products = [
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex items-end justify-between gap-4">
             <h2 className="text-2xl font-semibold">Polecane produkty</h2>
-            <a href="#" className="text-sm underline underline-offset-4">
+            <a
+              href="#"
+              className="text-sm underline underline-offset-4"
+            >
               Zobacz wszystkie
             </a>
           </div>
@@ -211,7 +202,7 @@ const products = [
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                     unoptimized
                   />
-                  <div className="absolute left-3 top-3 text-[11px] bg-slate-700	szary z mocniejszym kontrastem	#94a3b8 border px-2 py-0.5 rounded-full">
+                  <div className="absolute left-3 top-3 text-[11px] bg-slate-700 text-white border px-2 py-0.5 rounded-full">
                     {p.badge}
                   </div>
                 </div>
@@ -307,7 +298,6 @@ const products = [
       {/* STOPKA */}
       <footer className="bg-slate-400 border-t mt-16">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 text-slate-700">
-          {/* Logo i opis */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Image
@@ -323,75 +313,35 @@ const products = [
               </span>
             </div>
             <p className="text-sm text-slate-600">
-              Nowoczesne rozwiązania, płatności online e-commerce , terminale POS
-               i SoftPOS dla Twojego
-              biznesu. Szybko, bezpiecznie, globalnie.
+              Nowoczesne rozwiązania, płatności online e-commerce, terminale POS
+              i SoftPOS dla Twojego biznesu. Szybko, bezpiecznie, globalnie.
             </p>
           </div>
 
-          {/* O nas */}
           <div>
             <h3 className="font-semibold text-slate-900 mb-3">Firma</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#o-nas" className="hover:text-bg-slate-400">
-                  O nas
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-bg-slate-400">
-                  Kariera
-                </a>
-              </li>
-              <li>
-                <a href="#kontakt" className="hover:text-bg-slate-400">
-                  Kontakt
-                </a>
-              </li>
+              <li><a href="#o-nas">O nas</a></li>
+              <li><a href="#">Kariera</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
             </ul>
           </div>
 
-          {/* Oferta */}
           <div>
             <h3 className="font-semibold text-slate-900 mb-3">Oferta</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#oferta" className="hover:text-bg-slate-400">
-                  Płatności online
-                </a>
-              </li>
-              <li>
-                <a href="#oferta" className="hover:text-bg-slate-400">
-                  SoftPOS
-                </a>
-              </li>
-              <li>
-                <a href="#oferta" className="hover:text-0"bg-slate-400>">
-                  Integracje API
-                </a>
-              </li>
+              <li><a href="#oferta">Płatności online</a></li>
+              <li><a href="#oferta">SoftPOS</a></li>
+              <li><a href="#oferta">Integracje API</a></li>
             </ul>
           </div>
 
-          {/* Polityka */}
           <div>
             <h3 className="font-semibold text-slate-900 mb-3">Informacje</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="hover:text-bg-slate-400">
-                  Polityka prywatności
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-bg-slate-400">
-                  Regulamin
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-bg-slate-400">
-                  RODO
-                </a>
-              </li>
+              <li><a href="#">Polityka prywatności</a></li>
+              <li><a href="#">Regulamin</a></li>
+              <li><a href="#">RODO</a></li>
             </ul>
           </div>
         </div>
