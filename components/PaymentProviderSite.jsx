@@ -21,8 +21,7 @@ const BASE =
   (process.env.NODE_ENV === "production" ? "/PP-global" : "");
 
 export default function PaymentProviderSite() {
-  const products = [
-    
+const products = [
   {
     id: 1,
     name: "Terminal Ingenico",
@@ -45,9 +44,7 @@ export default function PaymentProviderSite() {
     img: `${BASE}/products/softpos-app.jpg`,
   },
 ];
-      img: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1600&auto=format&fit=crop",
-    },
-  ];
+
 
   const features = [
     {
