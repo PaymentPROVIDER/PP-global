@@ -22,25 +22,29 @@ const BASE =
 
 export default function PaymentProviderSite() {
   const products = [
-    {
-      id: 1,
-      name: "Ingenico DX 8000",
-      price: "499,00 zł",
-      badge: "Bestseller",
-      img: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1600&auto=format&fit=crop",
-    },
-    {
-      id: 2,
-      name: "EyePOS by EYEID  Nowość!",
-      price: " 499,00 zł",
-      badge: "Inowacja",
-      img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop",
-    },
-    {
-      id: 3,
-      name: "Aplikacja Softpos na telefon",
-      price: "4,99 zł",
-      badge: "Nowość",
+    
+  {
+    id: 1,
+    name: "Terminal Ingenico",
+    price: "499,00 zł",
+    badge: "Bestseller",
+    img: `${BASE}/products/terminal-ingenico.jpg`,
+  },
+  {
+    id: 2,
+    name: "Terminal EyePOS by EYEID",
+    price: "499,00 zł",
+    badge: "Innowacja",
+    img: `${BASE}/products/terminal-eyeid.jpg`,
+  },
+  {
+    id: 3,
+    name: "Aplikacja SoftPOS na telefon",
+    price: "4,99 zł",
+    badge: "Nowość",
+    img: `${BASE}/products/softpos-app.jpg`,
+  },
+
       img: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1600&auto=format&fit=crop",
     },
   ];
