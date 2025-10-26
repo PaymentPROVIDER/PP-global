@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Szare tło globalnie */
-html, body {
-  height: 100%;
-  background-color: #f4f6f8;
+/* Ustawienia globalne dla linków */
+a {
+  @apply text-slate-900 hover:text-slate-700 no-underline;
 }
