@@ -94,9 +94,12 @@ export default function PaymentProviderSite() {
             <a href="#kontakt">Kontakt</a>
           </nav>
 
-          <button className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm bg-slate-400 hover:shadow-md">
-            <ShoppingCart className="w-4 h-4" /> Koszyk (0)
-          </button>
+        {/* Tymczasowo ukryty koszyk */}
+<div className="hidden">
+  <button className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm bg-slate-400 hover:shadow-md">
+    Koszyk (0)
+  </button>
+</div>
         </div>
       </header>
 
@@ -202,9 +205,13 @@ export default function PaymentProviderSite() {
                   </div>
                   <div className="mt-3 flex items-center justify-between">
                     <div className="font-semibold">{p.price}</div>
-                    <button className="inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-200">
-                      <ShoppingCart className="w-4 h-4" /> Dodaj
-                    </button>
+                    {/* Tymczasowo ukryty przycisk Dodaj */}
+<div className="hidden">
+  <button className="inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-200">
+    Dodaj
+  </button>
+
+
                   </div>
                 </div>
               </div>
