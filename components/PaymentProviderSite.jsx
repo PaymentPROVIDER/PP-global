@@ -123,8 +123,9 @@ export default function PaymentProviderSite() {
             </motion.h1>
 
             <p className="mt-4 text-slate-600 max-w-xl">
-              PaymentProviderGlobal.com — nowoczesny dostawca, płatności na terminalach POS , płatności e-commerce i
-              terminali SoftPOS, dla firm każdej wielkości.
+              PaymentProviderGlobal.com — nowoczesny dostawca płatności ,
+              na terminalach POS , online - e-commerce i
+           aplikacje SoftPOS na telefon, dla firm każdej wielkości.
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
