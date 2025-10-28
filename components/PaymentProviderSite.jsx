@@ -132,11 +132,11 @@ export default function PaymentProviderSite() {
                 Zobacz ofertę
               </a>
               
-                href="#kontakt"
-                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 bg-slate-300 text-white text-sm font-medium hover:opacity-90"
-              >
-                Skontaktuj się z nami
-              </a>
+               href="#kontakt"
+  className="inline-flex items-center justify-center rounded-2xl px-6 py-3 bg-slate-300 text-white text-sm font-medium hover:opacity-90"
+>
+  Skontaktuj się z nami
+</a>
             </div>
 
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
