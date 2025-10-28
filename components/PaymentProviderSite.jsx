@@ -70,7 +70,7 @@ export default function PaymentProviderSite() {
   return (
     <div className="min-h-screen bg-slate-400 text-slate-900">
       <div className="w-full text-center text-xs py-2 border-b bg-slate-400">
-        Darmowa dostawa od 199 zł • 30 dni na zwrot
+         Payment Provider - technologies of the future
       </div>
 
       <header className="sticky top-0 z-30 bg-slate-400 backdrop-blur border-b">
@@ -94,12 +94,12 @@ export default function PaymentProviderSite() {
             <a href="#kontakt">Kontakt</a>
           </nav>
 
-        {/* Tymczasowo ukryty koszyk */}
-<div className="hidden">
-  <button className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm bg-slate-400 hover:shadow-md">
-    Koszyk (0)
-  </button>
-</div>
+          {/* Koszyk tymczasowo ukryty */}
+          <div style={{ display: 'none' }}>
+            <button className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm bg-slate-400 hover:shadow-md">
+              Koszyk (0)
+            </button>
+          </div>
         </div>
       </header>
 
@@ -124,14 +124,14 @@ export default function PaymentProviderSite() {
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
-              <a
+              
                 href="#sklep"
                 className="inline-flex items-center justify-center rounded-2xl px-6 py-3 border bg-slate-500 text-sm font-medium hover:shadow-md"
               >
                 <ArrowRight className="w-4 h-4 mr-2" />
                 Zobacz ofertę
               </a>
-              <a
+              
                 href="#kontakt"
                 className="inline-flex items-center justify-center rounded-2xl px-6 py-3 bg-slate-300 text-white text-sm font-medium hover:opacity-90"
               >
@@ -205,13 +205,12 @@ export default function PaymentProviderSite() {
                   </div>
                   <div className="mt-3 flex items-center justify-between">
                     <div className="font-semibold">{p.price}</div>
-                    {/* Tymczasowo ukryty przycisk Dodaj */}
-<div className="hidden">
-  <button className="inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-200">
-    Dodaj
-  </button>
-</div>
-
+                    {/* Przycisk Dodaj tymczasowo ukryty */}
+                    <div style={{ display: 'none' }}>
+                      <button className="inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-200">
+                        Dodaj
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -280,7 +279,7 @@ export default function PaymentProviderSite() {
               </p>
               <p>
                 E-mail:{" "}
-                <a
+                
                   href="mailto:office@paymentproviderglobal.com"
                   className="underline"
                 >
@@ -288,7 +287,7 @@ export default function PaymentProviderSite() {
                 </a>
                 <br />
                 Pomoc:{" "}
-                <a
+                
                   href="mailto:help@paymentproviderglobal.com"
                   className="underline"
                 >
