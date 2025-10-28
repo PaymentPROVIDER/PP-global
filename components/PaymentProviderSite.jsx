@@ -125,9 +125,9 @@ export default function PaymentProviderSite() {
 
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               
-                href="#sklep"
-                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 border bg-slate-500 text-sm font-medium hover:shadow-md"
-              >
+            <a href="#sklep"
+  className="inline-flex items-center justify-center rounded-2xl px-6 py-3 border bg-slate-500 text-sm font-medium hover:shadow-md"
+>
                 <ArrowRight className="w-4 h-4 mr-2" />
                 Zobacz ofertę
               </a>
