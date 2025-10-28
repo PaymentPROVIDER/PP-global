@@ -70,7 +70,7 @@ export default function PaymentProviderSite() {
   return (
     <div className="min-h-screen bg-slate-400 text-slate-900">
       <div className="w-full text-center text-xs py-2 border-b bg-slate-400">
-         Payment Provider - technologies of the future
+        Payment Provider - technologies of the future
       </div>
 
       <header className="sticky top-0 z-30 bg-slate-400 backdrop-blur border-b">
@@ -125,18 +125,18 @@ export default function PaymentProviderSite() {
 
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               
-            <a href="#sklep"
-  className="inline-flex items-center justify-center rounded-2xl px-6 py-3 border bg-slate-500 text-sm font-medium hover:shadow-md"
->
+                href="#sklep"
+                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 border bg-slate-500 text-sm font-medium hover:shadow-md"
+              >
                 <ArrowRight className="w-4 h-4 mr-2" />
                 Zobacz ofertę
               </a>
               
-               href="#kontakt"
-  className="inline-flex items-center justify-center rounded-2xl px-6 py-3 bg-slate-300 text-white text-sm font-medium hover:opacity-90"
->
-  Skontaktuj się z nami
-</a>
+                href="#kontakt"
+                className="inline-flex items-center justify-center rounded-2xl px-6 py-3 bg-slate-300 text-white text-sm font-medium hover:opacity-90"
+              >
+                Skontaktuj się z nami
+              </a>
             </div>
 
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
