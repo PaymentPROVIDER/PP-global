@@ -3,19 +3,23 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  ShoppingCart,
-  CreditCard,
-  ShieldCheck,
-  Truck,
-  ArrowRight,
-} from "lucide-react";
+import { CreditCard, ShieldCheck, Truck, ArrowRight } from "lucide-react";
 
 const BASE =
   process.env.NEXT_PUBLIC_BASE_PATH ??
   (process.env.NODE_ENV === "production" ? "/PP-global" : "");
 
 export default function PaymentProviderSite() {
+  const [formData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [formStatus, setFormStatus] = React.useState({
+    type: "idle",
+    message: "",
+  });
+
   const products = [
     {
       id: 1,
@@ -93,17 +97,10 @@ export default function PaymentProviderSite() {
             <a href="#sklep">Sklep</a>
             <a href="#kontakt">Kontakt</a>
           </nav>
-
-        {/* Tymczasowo ukryty koszyk */}
-<div className="hidden">
-  <button className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm bg-slate-400 hover:shadow-md">
-    Koszyk (0)
-  </button>
-</div>
         </div>
       </header>
 
-      <section className="py-14">
+      <section className="py-14" id="o-nas">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <motion.h1
@@ -174,7 +171,7 @@ export default function PaymentProviderSite() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex items-end justify-between gap-4">
             <h2 className="text-2xl font-semibold">Polecane produkty</h2>
-            <a href="#" className="text-sm underline underline-offset-4">
+            <a href="#oferta" className="text-sm underline underline-offset-4">
               Zobacz wszystkie
             </a>
           </div>
@@ -205,17 +202,42 @@ export default function PaymentProviderSite() {
                   </div>
                   <div className="mt-3 flex items-center justify-between">
                     <div className="font-semibold">{p.price}</div>
-                    {/* Tymczasowo ukryty przycisk Dodaj */}
-<div className="hidden">
-  <button className="inline-flex items-center gap-2 rounded-xl border px-3 py-1.5 text-sm hover:bg-slate-200">
-    Dodaj
-  </button>
-</div>
 
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-14 border-t border-slate-300/40 bg-slate-300/30">
+        <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="text-2xl font-semibold">Dlaczego my?</h2>
+            <p className="mt-4 text-slate-700">
+              Od ponad dekady wspieramy detalistów, sieci handlowe i e-commerce w
+              płynnym przyjmowaniu płatności. Łączymy nowoczesne terminale,
+              rozwiązania SoftPOS i integracje API z opieką dedykowanych
+              doradców.
+            </p>
+            <p className="mt-3 text-slate-700">
+              Certyfikaty PCI-DSS oraz ISO/IEC 27001 gwarantują zgodność i
+              bezpieczeństwo, a zespoły w Warszawie, Katowicach i Berlinie
+              zapewniają wsparcie w całej Europie.
+            </p>
+          </div>
+          <div className="rounded-3xl border bg-slate-300 p-6 shadow-sm">
+            <h3 className="text-xl font-semibold">Dołącz do zespołu</h3>
+            <p className="mt-3 text-slate-700">
+              Szukamy specjalistów ds. sprzedaży, product managerów i inżynierów
+              płatności. Wyślij CV na adres
+              {" "}
+              <a className="underline" href="mailto:hr@paymentproviderglobal.com">
+                hr@paymentproviderglobal.com
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>
@@ -245,24 +267,93 @@ export default function PaymentProviderSite() {
             <h3 className="text-2xl font-semibold">Kontakt</h3>
             <form
               className="mt-6 grid grid-cols-1 gap-4"
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={(event) => {
+                event.preventDefault();
+
+                if (
+                  !formData.name.trim() ||
+                  !formData.email.trim() ||
+                  !formData.message.trim()
+                ) {
+                  setFormStatus({
+                    type: "error",
+                    message: "Uzupełnij wszystkie pola, aby wysłać wiadomość.",
+                  });
+                  return;
+                }
+
+                setFormStatus({
+                  type: "success",
+                  message:
+                    "Dziękujemy! Skontaktujemy się z Tobą w ciągu jednego dnia roboczego.",
+                });
+                setFormData({ name: "", email: "", message: "" });
+              }}
             >
               <input
                 className="rounded-2xl border px-4 py-3 bg-slate-200 placeholder:text-slate-500"
                 placeholder="Imię i nazwisko"
+                name="name"
+                value={formData.name}
+                onChange={(event) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    name: event.target.value,
+                  }))
+                }
+                aria-label="Imię i nazwisko"
+                required
               />
               <input
                 className="rounded-2xl border px-4 py-3 bg-slate-200 placeholder:text-slate-500"
                 placeholder="Adres e-mail"
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={(event) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    email: event.target.value,
+                  }))
+                }
+                aria-label="Adres e-mail"
+                required
               />
               <textarea
                 className="rounded-2xl border px-4 py-3 min-h-[120px] bg-slate-200 placeholder:text-slate-500"
                 placeholder="Napisz, czym się zajmujesz i czego potrzebujesz"
+                name="message"
+                value={formData.message}
+                onChange={(event) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    message: event.target.value,
+                  }))
+                }
+                aria-label="Wiadomość"
+                required
               />
               <button className="rounded-2xl bg-slate-500 text-white px-5 py-3 text-sm hover:opacity-90">
                 Wyślij
               </button>
             </form>
+            <div
+              className="min-h-[1.5rem] pt-1 text-sm"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              {formStatus.type !== "idle" && (
+                <span
+                  className={
+                    formStatus.type === "error"
+                      ? "text-red-600"
+                      : "text-green-700"
+                  }
+                >
+                  {formStatus.message}
+                </span>
+              )}
+            </div>
           </div>
 
           <div className="rounded-2xl border p-8 bg-slate-300">
@@ -330,7 +421,7 @@ export default function PaymentProviderSite() {
                 <a href="#o-nas">O nas</a>
               </li>
               <li>
-                <a href="#">Kariera</a>
+                <a href="mailto:hr@paymentproviderglobal.com">Kariera</a>
               </li>
               <li>
                 <a href="#kontakt">Kontakt</a>
@@ -357,13 +448,13 @@ export default function PaymentProviderSite() {
             <h3 className="font-semibold text-slate-900 mb-3">Informacje</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#">Polityka prywatności</a>
+                <a href="/polityka-prywatnosci">Polityka prywatności</a>
               </li>
               <li>
-                <a href="#">Regulamin</a>
+                <a href="/regulamin">Regulamin</a>
               </li>
               <li>
-                <a href="#">RODO</a>
+                <a href="/rodo">RODO</a>
               </li>
             </ul>
           </div>
