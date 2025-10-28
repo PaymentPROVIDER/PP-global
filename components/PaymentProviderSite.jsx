@@ -20,14 +20,14 @@ export default function PaymentProviderSite() {
     {
       id: 1,
       name: "Terminal Ingenico",
-      price: "499,00 zł",
+      price: "od 39,00 zł/msc",
       badge: "Bestseller",
       img: `${BASE}/products/terminal-ingenico.jpg`,
     },
     {
       id: 2,
       name: "Terminal EyePOS by EYEID",
-      price: "499,00 zł",
+      price: "od 49,00 zł/msc",
       badge: "Innowacja",
       img: `${BASE}/products/terminal-eyeid.jpg`,
     },
