@@ -8,5 +8,5 @@ const nextConfig = {
   assetPrefix: "/PP-global/",   // żeby ścieżki do /public działały
 };
 
-export default nextConfig;
+module.exports = nextConfig;
 
