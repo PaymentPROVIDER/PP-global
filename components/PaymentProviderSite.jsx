@@ -106,6 +106,18 @@ export default function PaymentProviderSite() {
       role: "Member of the Supervisory Board",
       rolepl: "Członek Rady Nadzorczej",
       img: "/team/robert-kroplewski.jpeg"
+    },
+    {
+      name: "Chmaj i Partnerzy",
+      role: "Law Firm",
+      rolepl: "Kancelaria Prawna",
+      img: "/team/chmaj-partnerzy.png"
+    },
+    {
+      name: "Act Legal",
+      role: "Law Firm",
+      rolepl: "Kancelaria Prawna",
+      img: "/team/act-legal.png"
     }
   ];
 
