@@ -14,9 +14,7 @@ import {
   X,
 } from "lucide-react";
 
-const BASE =
-  process.env.NEXT_PUBLIC_BASE_PATH ??
-  (process.env.NODE_ENV === "production" ? "/PP-global" : "");
+const BASE = "";
 
 export default function PaymentProviderSite() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -72,6 +70,45 @@ export default function PaymentProviderSite() {
     "Google Pay",
   ];
 
+  const teamMembers = [
+    {
+      name: "Michał Dąbrowski",
+      role: "Chairman of the Board",
+      rolepl: "Przewodniczący Rady Nadzorczej",
+      img: "/team/michal-dabrowski.jpg"
+    },
+    {
+      name: "Arkadiusz Ignasiak",
+      role: "Member of the Supervisory Board",
+      rolepl: "Członek Rady Nadzorczej",
+      img: "/team/arkadiusz-ignasiak.webp"
+    },
+    {
+      name: "Tomasz Zjawiony",
+      role: "Member of the Supervisory Board",
+      rolepl: "Członek Rady Nadzorczej",
+      img: "/team/tomasz-zjawiony.jpeg"
+    },
+    {
+      name: "Łukasz Łyczba",
+      role: "Member of the Supervisory Board and Head of IT",
+      rolepl: "Członek Rady Nadzorczej i Direktor IT",
+      img: "/team/lukasz-lyczba.png"
+    },
+    {
+      name: "Ireneusz Ozga",
+      role: "Member of the Supervisory Board",
+      rolepl: "Członek Rady Nadzorczej",
+      img: "/team/ireneusz-ozga.jpeg"
+    },
+    {
+      name: "Robert Kroplewski",
+      role: "Member of the Supervisory Board",
+      rolepl: "Członek Rady Nadzorczej",
+      img: "/team/robert-kroplewski.jpeg"
+    }
+  ];
+
   return (
     <>
       <Head>
@@ -125,6 +162,9 @@ export default function PaymentProviderSite() {
               <a href="#sklep" className="hover:text-slate-600 transition-colors">
                 Sklep
               </a>
+              <a href="#zespol" className="hover:text-slate-600 transition-colors">
+                Zespół
+              </a>
               <a href="#kontakt" className="hover:text-slate-600 transition-colors">
                 Kontakt
               </a>
@@ -167,6 +207,13 @@ export default function PaymentProviderSite() {
                   className="hover:text-slate-600 transition-colors"
                 >
                   Sklep
+                </a>
+                <a
+                  href="#zespol"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="hover:text-slate-600 transition-colors"
+                >
+                  Zespół
                 </a>
                 <a
                   href="#kontakt"
@@ -398,6 +445,30 @@ export default function PaymentProviderSite() {
                 </p>
                 <p>Biuro czynne: pon–pt 9:00–17:00</p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-14 bg-slate-50" id="zespol">
+          <div className="mx-auto max-w-7xl px-6">
+            <h2 className="text-2xl font-semibold text-center mb-10">Nasz Zespół</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {teamMembers.map((member, idx) => (
+                <div key={idx} className="rounded-2xl border border-slate-200 bg-white p-6 text-center hover:shadow-lg transition-shadow">
+                  <div className="mb-4 flex justify-center">
+                    <Image
+                      src={member.img}
+                      alt={member.name}
+                      width={120}
+                      height={120}
+                      className="rounded-full"
+                    />
+                  </div>
+                  <h3 className="text-lg font-semibold text-slate-900">{member.name}</h3>
+                  <p className="text-sm text-blue-600 mt-1">{member.role}</p>
+                  <p className="text-sm text-slate-600 mt-0.5">{member.rolepl}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
